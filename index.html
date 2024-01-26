@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Izac Carmona - Portfolio</title>
+
+<link rel="apple-touch-i01con" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="img/site.webmanifest">
+<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="img/favicon.ico">
+<meta name="msapplication-TileColor" content="#b91d47">
+<meta name="msapplication-config" content="img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+    /* Set page colors with variables */
+        :root
+{
+--color-primary:#000000;
+--color-secondary:#B2C7D2;
+--color-third:#B2C7D2;
+}
+
+/* Reset browser */
+*,*::before, *::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix browser bounce */
+body
+{
+    overflow-x: auto;
+    width: 100%;
+    overscroll-behavior: none;
+}
+
+/* General css for mobile first */
+
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+    background-color: #1C1D1E;
+    color: white;
+}
+a
+{
+    text-decoration: none;
+}
+p
+{
+    margin: 1rem 0;
+}
+h1,h2
+{
+    text-align: center;
+}
+h1,h2,h3
+{
+    line-height: 1.2;
+}
+li
+{
+    line-height: 2;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+    /* Header */
+.header
+{
+    background-color:#2C4D54;
+    height: 70px;
+}
+.header .container
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 20px 0 20px;
+        align-items: center;
+    }
+
+header img
+    {
+    height: 45px;
+    }
+
+.logos
+    {
+        display:none;
+    }
+.logo
+    {
+        width: 300px;
+    }
+.menu
+    {
+        display: flex;
+        width: 200px;
+        list-style-type: none;
+    }
+.menu li
+    {
+        padding: 0 10px 0 10px;
+    }
+.menu li a 
+    {
+        color: white;
+    }
+
+    /* Showcase */
+.showcase
+    {
+        /* background-color:var(--color-seconary); */
+        padding: 30px;
+        /* background-image: linear-gradient(to bottom, var(--color-third), var(--color-primary)); */
+        background-image: url(img/Spiderain.jpg);
+        background-size: 129%;
+        background-attachment: fixed;
+        background-position: center top;
+        min-height: 500px;
+        background-repeat: no-repeat;
+    }
+
+#showcase-text
+    {
+color: white;
+text-align: center;
+margin: 50px auto;
+max-width: 500px;
+    }
+
+.showcase h1
+    {
+font-size: 50px;
+margin-bottom: 20px;
+    }
+.showcase p
+    {
+font-size: 24px;
+margin-bottom: 20px;
+    }
+.showcase-img img
+    {
+border-radius: 10px;
+margin: 0 auto;
+    }
+.showcase-img
+{
+    text-align: center;
+}
+.showcase-demo
+    {
+color: white;
+text-align: center;
+    }
+/* cards */
+.features
+{
+    margin-top: 2rem
+}
+.features .container
+{
+    background-color:none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card
+{
+    background-color:#171A1B;
+    padding: 20px;
+    box-shadow: 0 0 10px silver;
+    margin-bottom: 20px;
+    flex-basis: 28%;
+    box-shadow: 0px 10px 30px 10px white;
+}
+
+/* page content */
+.page-content
+{
+    margin: 20px 0;
+}
+
+.page-content h2, .page-content h3
+{
+    margin: 20px 0;
+}
+.page-content h2
+{
+font-size: 40px;
+}
+.page-content h3
+{
+font-size: 25px;
+}
+/* Semesters */
+.semesters
+{
+    margin: 20px 0;
+}
+
+.semesters h2, .semesters h3
+{
+    margin: 20px 0;
+}
+.semesters h2
+{
+font-size: 40px;
+}
+.semesters h3
+{
+font-size: 25px;
+}
+.footer
+{
+    background-color:var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+@media  (min-width: 700px) {
+
+  .features .container
+{
+
+    flex-direction: row;
+}
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<!-- Begin Header -->
+<header class="header">
+<div class="container">
+    
+            <div class="logo">
+            <a href="index.html"> <img src="img/trasnspider.png" alt=""></a>
+            </div>
+    
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+    
+                </ul>
+            </nav>
+</div>
+</header>
+<!-- End Header -->
+
+<!-- Begin Showcase -->
+<section class="showcase">
+    <div id="showcase-text">
+        <h1>Izac Carmona</h1>
+        <h2>Portfolio</h2>
+    </div>
+
+    <div class="showcase-img">
+<!-- Link to frameowrk images versus platform -->
+        <!-- <img src="img/framework-logos.png" alt="framework logos." class="logos"> -->
+        <!-- <img src="img" width="355px" class="logos-small"> -->
+    </div>
+    <p class="showcase-demo">
+        <!-- <small>Work showcase</small> -->
+    </p>
+</section>
+<!-- End Showcase -->
+
+<!-- begin features -->
+<section class="features">
+<div class="container">
+        <div class="card">
+            <h3>Career
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ab!</p>
+            </h3>
+        </div>
+    
+        <div class="card">
+            <h3>Design
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ab!</p>
+            </h3>
+        </div>
+    
+        <div class="card">
+            <h3>Programming
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ab!</p>
+            </h3>
+        </div>
+    </div>
+</section>
+
+
+<section id="page-content">
+<div class="container">
+        <h2>Introduction</h2> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic voluptatibus, fuga unde fugiat pariatur ab porro laboriosam tenetur at rerum adipisci deleniti cumque atque.
+        </p>
+    
+        <h3>Career</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quasi odit laudantium consequuntur maiores corrupti architecto recusandae perferendis perspiciatis ab eos, totam porro magni impedit dignissimos sequi ducimus quis ut.</p>
+    
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam earum quidem? Beatae ducimus, aliquid numquam tempora iure distinctio! Ipsam, optio ipsa quod cumque suscipit sed voluptatibus? Voluptates, fuga nulla?</p>
+    
+        <h3>Programming</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum quod, magnam at provident praesentium consequuntur corrupti soluta tempora? Eos ipsam consequuntur fugiat libero enim unde consectetur ipsum magni laborum?</p>
+    </section>
+</div>
+<!-- end page - content -->
+
+<!-- Begin semester section -->
+
+<section class="semesters">
+<div class="container">
+        <h2>Key Assignments</h2>
+        <h3>Semester 1</h3>
+                <a href="https://chsserver01.org/2023/icarmona062023/Activities/PaintbrushProtypeV1/paintbrushv1.html">Paint Brush </a>
+    
+                <br><a href="https://chsserver01.org/2023/icarmona062023/Demos/ArraysReview/arraysreviewforeach.html">Random Fruit Array </a></br>
+
+
+        </p>
+    
+        <h3>Semester 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti reiciendis labore explicabo tenetur magni est id voluptate cupiditate sapiente.</p>
+</div>
+</section>  
+
+<!-- End semestester section -->
+
+<!-- Begin footer section -->
+    <footer class="footer">
+<div class="container">
+        <div>
+            <h3>Final Thoughts</h3>
+            <blockquote>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, atque!
+            </blockquote>
+            <p>anonymous</p>
+        </div>
+    
+    <div>
+    <h3>Links</h3>
+    
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+    
+    </div>
+    
+        </footer>
+    
+</div>
+
+<!-- End footer section -->
+
+
+</body>
+</html>

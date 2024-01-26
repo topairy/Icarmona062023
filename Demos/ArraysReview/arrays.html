@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Car Brands</h1>
+    <script>
+
+
+// create array variables
+    let myCars = [];
+
+
+    // add values to array using the push method
+    myCars[0] = "BMW";
+    myCars[1] = "Ferrari";
+    myCars[2] = "Ford";
+    myCars[3] = "Honda";
+    myCars[4] = "Mercedes";
+    myCars[5] = "McLaren"
+
+    myCars.push('Toyota');
+    myCars.push('Lambo');
+    myCars.push('Bentley');
+
+    //window.alert(myList);
+    window.document.write(myCars);
+
+
+    // delete last value of an array using the pop method
+    myCars.pop();
+
+        // delete the first value of an array using the shift method
+    myCars.shift();
+
+    // window.alert(myList);
+
+    console.log(myCars.length);
+
+    myCars.forEach(function(dogname, index){
+        console.log(index + ' ' + dogname);
+    });
+
+    myCars.forEach(function(dn, index)
+    {
+        window.alert(dn + 'is a brand' + index);
+
+    });
+
+    </script>
+</body>
+</html>

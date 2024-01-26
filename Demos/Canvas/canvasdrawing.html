@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=L, initial-scale=1.0" />
+    <title>Landscape</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #canvas {
+        margin: auto;
+        display: block;
+        border: 1px solid silver;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+      const canvas = window.document.querySelector('#canvas');
+      const ctx = canvas.getContext('2d');
+
+
+// house base
+      ctx.fillStyle = 'blue';
+ctx.fillRect(380,240,300,260);
+
+// house roof
+ctx.fillStyle = 'red';
+ctx.beginPath();
+ctx.moveTo(280, 280);
+ctx.lineTo(780, 280);
+ctx.lineTo(520, 100);
+ctx.closePath(); // close the path
+ctx.fill();
+ctx.stroke();
+
+// door
+ctx.fillStyle = 'lime';
+ctx.fillRect(500,390,60,110);
+
+
+
+
+    </script>
+  </body>
+</html>
